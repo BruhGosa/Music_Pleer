@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="soundplayer.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos Y="23"/>
+        <UsageCount Value="88"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="gosa_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Pleer_Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="29"/>
+        <CursorPos X="5" Y="50"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="88"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="help_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Help_Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="9" Y="34"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="equalizer_program.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Equalizer_Form"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="5" Y="50"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\lcl\include\customlistbox.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="219"/>
+        <CursorPos Y="240"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32listsl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="140"/>
+        <CursorPos Y="151"/>
+        <UsageCount Value="6"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2232"/>
+        <CursorPos Y="2242"/>
+        <UsageCount Value="6"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\include\buttoncontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos Y="22"/>
+        <UsageCount Value="6"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\include\buttons.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="159"/>
+        <CursorPos Y="170"/>
+        <UsageCount Value="6"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\lcl\include\wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5402"/>
+        <CursorPos Y="5412"/>
+        <UsageCount Value="6"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="C:\lazarus\lcl\lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos Y="112"/>
+        <UsageCount Value="6"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2667"/>
+        <CursorPos Y="2677"/>
+        <UsageCount Value="6"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32wsforms.pp"/>
+        <UnitName Value="Win32WSForms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="377"/>
+        <CursorPos Y="387"/>
+        <UsageCount Value="6"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32wsstdctrls.pp"/>
+        <UnitName Value="Win32WSStdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1797"/>
+        <CursorPos Y="1807"/>
+        <UsageCount Value="6"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\win32object.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="395"/>
+        <CursorPos Y="399"/>
+        <UsageCount Value="6"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1407"/>
+        <CursorPos Y="1418"/>
+        <UsageCount Value="6"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="35" Column="27" TopLine="29"/>
+      </Position1>
+      <Position2>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="36" Column="27" TopLine="30"/>
+      </Position2>
+      <Position3>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="37" Column="27" TopLine="31"/>
+      </Position3>
+      <Position4>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="41" Column="27" TopLine="35"/>
+      </Position4>
+      <Position5>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="40" Column="27" TopLine="34"/>
+      </Position5>
+      <Position6>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="39" Column="27" TopLine="33"/>
+      </Position6>
+      <Position7>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="38" Column="27" TopLine="32"/>
+      </Position7>
+      <Position8>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="37" Column="27" TopLine="31"/>
+      </Position8>
+      <Position9>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="41" Column="27" TopLine="35"/>
+      </Position9>
+      <Position10>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="40" Column="27" TopLine="34"/>
+      </Position10>
+      <Position11>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="39" Column="27" TopLine="33"/>
+      </Position11>
+      <Position12>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="38" Column="27" TopLine="32"/>
+      </Position12>
+      <Position13>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="37" Column="27" TopLine="31"/>
+      </Position13>
+      <Position14>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="41" Column="27" TopLine="35"/>
+      </Position14>
+      <Position15>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="42" Column="27" TopLine="36"/>
+      </Position15>
+      <Position16>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="55" Column="66" TopLine="22"/>
+      </Position16>
+      <Position17>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="38" Column="31" TopLine="19"/>
+      </Position17>
+      <Position18>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="47" Column="27" TopLine="25"/>
+      </Position18>
+      <Position19>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="295" Column="68" TopLine="235"/>
+      </Position19>
+      <Position20>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="215" Column="26" TopLine="206"/>
+      </Position20>
+      <Position21>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="64" Column="3" TopLine="81"/>
+      </Position21>
+      <Position22>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="68" Column="14" TopLine="46"/>
+      </Position22>
+      <Position23>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="54" Column="4" TopLine="43"/>
+      </Position23>
+      <Position24>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="62" Column="11" TopLine="107"/>
+      </Position24>
+      <Position25>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="96" Column="3" TopLine="94"/>
+      </Position25>
+      <Position26>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="221" Column="26" TopLine="213"/>
+      </Position26>
+      <Position27>
+        <Filename Value="gosa_program.pas"/>
+        <Caret Line="166" Column="3" TopLine="54"/>
+      </Position27>
+      <Position28>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="59" Column="66" TopLine="26"/>
+      </Position28>
+      <Position29>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="39" Column="5" TopLine="26"/>
+      </Position29>
+      <Position30>
+        <Filename Value="equalizer_program.pas"/>
+        <Caret Line="50" Column="18" TopLine="26"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
