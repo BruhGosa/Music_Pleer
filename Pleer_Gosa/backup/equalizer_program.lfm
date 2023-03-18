@@ -1,0 +1,207 @@
+object Equalizer_Form: TEqualizer_Form
+  Left = 235
+  Height = 167
+  Top = 267
+  Width = 481
+  BorderStyle = bsToolWindow
+  Caption = 'Equalizer'
+  ClientHeight = 167
+  ClientWidth = 481
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object Close_Button: TButton
+    Left = 201
+    Height = 25
+    Top = 136
+    Width = 75
+    Caption = 'Выход'
+    OnClick = Close_ButtonClick
+    TabOrder = 0
+  end
+  object TrackBar_FX80: TTrackBar
+    Left = 8
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX80Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 1
+  end
+  object TrackBar_FX170: TTrackBar
+    Left = 56
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX170Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 2
+  end
+  object TrackBar_FX310: TTrackBar
+    Left = 104
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX310Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 3
+  end
+  object TrackBar_FX600: TTrackBar
+    Left = 152
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX600Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 4
+  end
+  object TrackBar_FX1000: TTrackBar
+    Left = 200
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX1000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 5
+  end
+  object TrackBar_FX3000: TTrackBar
+    Left = 248
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX3000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 6
+  end
+  object TrackBar_FX6000: TTrackBar
+    Left = 296
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX6000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 7
+  end
+  object TrackBar_FX10000: TTrackBar
+    Left = 344
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX10000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 8
+  end
+  object TrackBar_FX12000: TTrackBar
+    Left = 392
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX12000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 9
+  end
+  object TrackBar_FX14000: TTrackBar
+    Left = 440
+    Height = 100
+    Top = 8
+    Width = 25
+    OnChange = TrackBar_FX14000Change
+    Orientation = trVertical
+    Position = 0
+    TabOrder = 10
+  end
+  object Label_80gz: TLabel
+    Left = 8
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = '80 Гц'
+    ParentColor = False
+  end
+  object Label_170gz: TLabel
+    Left = 56
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '170 Гц'
+    ParentColor = False
+  end
+  object Label_310gz: TLabel
+    Left = 104
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '310 Гц'
+    ParentColor = False
+  end
+  object Label_600gz: TLabel
+    Left = 152
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '600 Гц'
+    ParentColor = False
+  end
+  object Label_1000gz: TLabel
+    Left = 200
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = '1 кГц'
+    ParentColor = False
+  end
+  object Label_3000gz: TLabel
+    Left = 248
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = '3 кГц'
+    ParentColor = False
+  end
+  object Label_6000gz: TLabel
+    Left = 296
+    Height = 15
+    Top = 112
+    Width = 28
+    Caption = '6 кГц'
+    ParentColor = False
+  end
+  object Label_10000gz: TLabel
+    Left = 344
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '10 кГц'
+    ParentColor = False
+  end
+  object Label_12000gz: TLabel
+    Left = 392
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '12 кГц'
+    ParentColor = False
+  end
+  object Label_14000gz: TLabel
+    Left = 440
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = '14 кГц'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 128
+  end
+end

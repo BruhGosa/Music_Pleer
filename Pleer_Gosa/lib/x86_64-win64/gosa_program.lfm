@@ -1,0 +1,176 @@
+object Pleer_Form: TPleer_Form
+  Left = 888
+  Height = 477
+  Top = 314
+  Width = 852
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsToolWindow
+  Caption = 'Gosa_Pleer'
+  ClientHeight = 477
+  ClientWidth = 852
+  Color = clSkyBlue
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object Play_List: TListBox
+    Left = 8
+    Height = 440
+    Top = 8
+    Width = 464
+    Align = alCustom
+    Anchors = []
+    Color = 16444124
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    OnClick = Play_ListClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button_Add_File: TButton
+    Left = 8
+    Height = 25
+    Top = 448
+    Width = 56
+    Caption = 'Add'
+    OnClick = Button_Add_FileClick
+    TabOrder = 1
+  end
+  object Button_Last: TButton
+    Left = 480
+    Height = 55
+    Top = 192
+    Width = 60
+    Caption = 'Last'
+    OnClick = Button_LastClick
+    TabOrder = 2
+  end
+  object Button_Next: TButton
+    Left = 780
+    Height = 55
+    Top = 192
+    Width = 60
+    Caption = 'Next'
+    OnClick = Button_NextClick
+    TabOrder = 3
+  end
+  object Scroll_Bar_Music: TScrollBar
+    Left = 480
+    Height = 25
+    Top = 296
+    Width = 360
+    PageSize = 0
+    TabOrder = 4
+    OnScroll = Scroll_Bar_MusicScroll
+  end
+  object Name_Music: TLabel
+    Left = 480
+    Height = 21
+    Top = 48
+    Width = 126
+    Caption = 'Выберете музыку'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object TimePos: TLabel
+    Left = 480
+    Height = 17
+    Top = 326
+    Width = 48
+    Caption = '00:00:00'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object TimeLen: TLabel
+    Left = 792
+    Height = 17
+    Top = 328
+    Width = 48
+    Caption = '00:00:00'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Volume_Bar: TTrackBar
+    Cursor = crCross
+    Left = 809
+    Height = 102
+    Top = 344
+    Width = 31
+    Orientation = trVertical
+    Position = 0
+    Reversed = True
+    ParentShowHint = False
+    TabOrder = 5
+  end
+  object Hide_Show_Button: TButton
+    Left = 800
+    Height = 25
+    Top = 446
+    Width = 40
+    Caption = 'Hide'
+    OnClick = Hide_Show_ButtonClick
+    TabOrder = 6
+  end
+  object HelpButton: TButton
+    Left = 815
+    Height = 29
+    Top = 8
+    Width = 25
+    Caption = '?'
+    OnClick = HelpButtonClick
+    TabOrder = 7
+  end
+  object Equalizer_Button: TButton
+    Left = 397
+    Height = 25
+    Top = 448
+    Width = 75
+    Caption = 'Equalizer'
+    OnClick = Equalizer_ButtonClick
+    TabOrder = 8
+  end
+  object Button_Play_Paused: TImage
+    Left = 598
+    Height = 122
+    Top = 152
+    Width = 122
+    AutoSize = True
+    OnClick = Button_Play_PausedClick
+    OnMouseDown = Button_Play_PausedMouseDown
+    OnMouseEnter = Button_Play_PausedMouseEnter
+    OnMouseLeave = Button_Play_PausedMouseLeave
+    OnMouseUp = Button_Play_PausedMouseUp
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'mp3 файлы|*.mp3|wav файлы|*.wav|mp2 файлы|*.mp2|ogg файлы|*.ogg'
+    Options = [ofAllowMultiSelect, ofEnableSizing]
+    Left = 24
+    Top = 16
+  end
+  object Timer1: TTimer
+    Interval = 30
+    OnTimer = Timer1Timer
+    Left = 88
+    Top = 16
+  end
+end
