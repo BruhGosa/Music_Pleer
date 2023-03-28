@@ -1,0 +1,272 @@
+object Pleer_Form: TPleer_Form
+  Left = 122
+  Height = 480
+  Top = 284
+  Width = 850
+  Caption = 'Музыкальный плеер'
+  ClientHeight = 480
+  ClientWidth = 850
+  Color = clSkyBlue
+  Constraints.MinHeight = 480
+  Constraints.MinWidth = 850
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Name = 'Yu Gothic UI'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.2.4.0'
+  object Play_List: TListBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Button_Equalizer
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button_Add_File
+    Left = 8
+    Height = 439
+    Top = 8
+    Width = 464
+    Align = alCustom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Bottom = 4
+    Color = 16444124
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Calibri'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 0
+    OnClick = Play_ListClick
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Scroll_Bar_Music: TScrollBar
+    AnchorSideLeft.Control = Play_List
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 480
+    Height = 25
+    Top = 296
+    Width = 362
+    Anchors = [akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    PageSize = 0
+    TabOrder = 1
+    OnScroll = Scroll_Bar_MusicScroll
+  end
+  object Name_Music: TLabel
+    AnchorSideLeft.Control = Play_List
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Owner
+    Left = 480
+    Height = 21
+    Top = 55
+    Width = 127
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 55
+    Caption = 'Выберите музыку'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -16
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object TimePos: TLabel
+    AnchorSideLeft.Control = Play_List
+    AnchorSideLeft.Side = asrBottom
+    Left = 480
+    Height = 17
+    Top = 326
+    Width = 48
+    Anchors = [akLeft]
+    BorderSpacing.Left = 8
+    Caption = '00:00:00'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object TimeLen: TLabel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 794
+    Height = 17
+    Top = 328
+    Width = 48
+    Anchors = [akRight]
+    BorderSpacing.Right = 8
+    Caption = '00:00:00'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Volume_Bar: TTrackBar
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button_Volume
+    Left = 816
+    Height = 101
+    Top = 346
+    Width = 34
+    Orientation = trVertical
+    Position = 0
+    Reversed = True
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Bottom = 4
+    ParentShowHint = False
+    TabOrder = 2
+  end
+  object Button_Play_Paused: TImage
+    AnchorSideLeft.Control = Play_List
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 600
+    Height = 120
+    Top = 160
+    Width = 120
+    Anchors = []
+    AutoSize = True
+    OnClick = Button_Play_PausedClick
+    OnMouseDown = Button_Play_PausedMouseDown
+    OnMouseEnter = Button_Play_PausedMouseEnter
+    OnMouseLeave = Button_Play_PausedMouseLeave
+    OnMouseUp = Button_Play_PausedMouseUp
+  end
+  object Button_Next: TImage
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 776
+    Height = 66
+    Top = 184
+    Width = 66
+    Anchors = [akRight]
+    BorderSpacing.Right = 8
+    OnClick = Button_NextClick
+    OnMouseDown = Button_NextMouseDown
+    OnMouseEnter = Button_NextMouseEnter
+    OnMouseLeave = Button_NextMouseLeave
+    OnMouseUp = Button_NextMouseUp
+  end
+  object Button_Last: TImage
+    AnchorSideLeft.Control = Play_List
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Name_Music
+    AnchorSideBottom.Control = Scroll_Bar_Music
+    Left = 480
+    Height = 66
+    Top = 184
+    Width = 66
+    Anchors = [akLeft]
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 129
+    BorderSpacing.Bottom = 46
+    OnClick = Button_LastClick
+    OnMouseDown = Button_LastMouseDown
+    OnMouseEnter = Button_LastMouseEnter
+    OnMouseLeave = Button_LastMouseLeave
+    OnMouseUp = Button_LastMouseUp
+  end
+  object Button_Add_File: TImage
+    AnchorSideLeft.Control = Owner
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 8
+    Height = 25
+    Top = 451
+    Width = 25
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 4
+    OnClick = Button_Add_FileClick
+    OnMouseDown = Button_Add_FileMouseDown
+    OnMouseUp = Button_Add_FileMouseUp
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button_Volume: TImage
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 817
+    Height = 25
+    Top = 451
+    Width = 25
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 4
+    OnClick = Button_VolumeClick
+    OnMouseDown = Button_VolumeMouseDown
+    OnMouseUp = Button_VolumeMouseUp
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button_Equalizer: TImage
+    AnchorSideLeft.Control = Button_Add_File
+    AnchorSideTop.Control = Play_List
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 447
+    Height = 25
+    Top = 451
+    Width = 25
+    Anchors = [akTop, akBottom]
+    BorderSpacing.Left = 437
+    BorderSpacing.Bottom = 4
+    OnClick = Button_EqualizerClick
+    OnMouseDown = Button_EqualizerMouseDown
+    OnMouseUp = Button_EqualizerMouseUp
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button_Help: TImage
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 817
+    Height = 25
+    Top = 8
+    Width = 25
+    Anchors = [akTop, akRight]
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    OnClick = Button_HelpClick
+    OnMouseDown = Button_HelpMouseDown
+    OnMouseUp = Button_HelpMouseUp
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'mp3 файлы|*.mp3|wav файлы|*.wav|mp2 файлы|*.mp2|ogg файлы|*.ogg|aiff файлы|*.aiff'
+    Options = [ofAllowMultiSelect, ofEnableSizing]
+    Left = 24
+    Top = 16
+  end
+  object Timer1: TTimer
+    Interval = 30
+    OnTimer = Timer1Timer
+    Left = 88
+    Top = 16
+  end
+end
